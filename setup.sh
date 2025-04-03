@@ -29,7 +29,7 @@ msg_err() { echo -e "${COLOR_RED}[ERR]${COLOR_RESET} $1" >&2; }
 install_base_packages() {
   msg "Installiere Basispakete..."
   sudo apt update
-  sudo apt install -y git fzf curl tmux neovim ca-certificates nala yadm
+  sudo apt install -y git fzf curl tmux neovim ca-certificates nala yadm tree
   msg_ok "Pakete installiert."
 }
 
